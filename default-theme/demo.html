@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>This title for free sharing</title>
+    <script type="text/javascript" src="../src/OpenSocialShare.js"></script>
+    <script type="text/javascript" src="OpenSocialShareDefaultTheme.js"></script>
+    <script type="text/javascript" src="OpenSocialShareDefaultTheme2.js"></script>
+    <meta name=""/>
+
+</head>
+<body>
+    <div id="interface"></div>
+    <br />
+    <br />
+  
+    <br />
+    <div id="interface3" data-share-url="http://www.loginradius.com" data-share-title="This from custom"
+         data-share-description="this description is custom" data-share-imageurl="http://3wcmm13zx3fn2h5mb93jvvkr.wpengine.netdna-cdn.com/wp-content/themes/theme-lr-master/images/logo-white.png"></div>
+
+    <script type="text/javascript">
+       
+
+        var govind = new OpenSocialShare();
+        govind.init({
+            theme: 'OpenSocialShareDefaultTheme',
+            url : 'http://www.loginradius.com'
+        });
+        govind.injectInterface("#interface");
+
+        var custom = new OpenSocialShare();
+        custom.init({
+            theme: 'OpenSocialShareDefaultTheme2'
+        });
+        custom.injectInterface("#interface3");
+    </script>
+
+
+
+</body>
+</html>
